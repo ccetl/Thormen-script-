@@ -4,7 +4,7 @@ import mods.jei.JEI;
 import crafttweaker.api.recipe.Replacer;
 import mods.create.PressingManager;
 import crafttweaker.api.recipe.FurnaceRecipeManager;
-import crafttweaker.api.fluid.IFluidStack; // check for create stuff and additions dependensis
+import crafttweaker.api.fluid.IFluidStack;
 /*-------------------------------Support for not supported mods--------------------------*/
 
 function addrollingrecipe_(itemIn as IItemStack,outputItem as IItemStack, count as int) as void {
@@ -18,7 +18,6 @@ function addrollingrecipe_(itemIn as IItemStack,outputItem as IItemStack, count 
 	}
     });
 }
-
 
 function addCrushingRecipe(itemIn as IItemStack,outputItem as IItemStack) as void {
     <recipetype:mekanism:crushing>.addJSONRecipe("custemmekacrushing"+itemIn.registryName.path+outputItem.registryName.path+"dvsvs",{ 
@@ -69,10 +68,10 @@ craftingTable.removeByName("immersiveengineering:crafting/plate_copper_hammering
 JEI.hideIngredient(<item:immersiveengineering:plate_copper>);
 JEI.hideIngredient(<item:create:copper_sheet>);                                                //remove items from JEI
 <tag:items:forge:plates/copper>.add(<item:alltheores:copper_plate>);
-Replacer.forEverything().replace(<item:create:copper_sheet>,<item:alltheores:copper_plate>).suppressWarnings().execute();                           //set default item
+Replacer.forEverything().replace(<item:create:copper_sheet>,<item:alltheores:copper_plate>).suppressWarnings().execute();                          
 /*---------------------------------Iron Plate---------------------------------------------*/
 craftingTable.removeByName("immersiveengineering:crafting/plate_iron_hammering");
-craftingTable.removeByName("beyond_earth:iron_plate");                                          //create to do: remove pressing
+craftingTable.removeByName("beyond_earth:iron_plate");                                          
 craftingTable.removeByName("electrodynamics:plateiron");
 JEI.hideIngredient(<item:immersiveengineering:plate_iron>);
 JEI.hideIngredient(<item:beyond_earth:iron_plate>);
@@ -180,7 +179,7 @@ JEI.hideIngredient(<item:electrodynamics:circuitadvanced>);
 JEI.hideIngredient(<item:electrodynamics:circuitelite>);
 JEI.hideIngredient(<item:electrodynamics:circuitultimate>);
 /*-------------------------------------Create----------------------------------------------*/
-/*craftingTable.removeByName("create_stuff_additions:copper_armor_body_recipe");                  //to do rolling
+/*craftingTable.removeByName("create_stuff_additions:copper_armor_body_recipe");                  
 craftingTable.removeByName("create_stuff_additions:copper_armor_boots_recipe");
 craftingTable.removeByName("create_stuff_additions:copper_armor_helmet_recipe");
 craftingTable.removeByName("create_stuff_additions:copper_armor_leggings_recipe");
@@ -230,10 +229,10 @@ JEI.hideIngredient(<item:create:zinc_nugget>);
 <recipetype:create:pressing>.addRecipe("alltheoresenderium_ingot_",[<item:alltheores:enderium_plate>],<item:alltheores:enderium_ingot>);
 <recipetype:create:pressing>.addRecipe("alltheoreslumium_ingot_",[<item:alltheores:lumium_plate>],<item:alltheores:lumium_ingot>);
 <recipetype:create:pressing>.addRecipe("alltheoressignalum_ingot_",[<item:alltheores:signalum_plate>],<item:alltheores:signalum_ingot>);
-<recipetype:create:pressing>.addRecipe("alltheoresbrass_ingot_",[<item:alltheores:brass_plate>],<item:alltheores:brass_ingot>);        //to do brass ingot
+<recipetype:create:pressing>.addRecipe("alltheoresbrass_ingot_",[<item:alltheores:brass_plate>],<item:alltheores:brass_ingot>);
 <recipetype:create:pressing>.addRecipe("alltheoresconstantan_ingot_",[<item:alltheores:constantan_plate>],<item:alltheores:constantan_ingot>);
 
-<recipetype:create:pressing>.removeByName("create:pressing/gold_ingot");               //<-this one
+<recipetype:create:pressing>.removeByName("create:pressing/gold_ingot");              
 <recipetype:create:pressing>.removeByName("create:pressing/copper_ingot");
 <recipetype:create:pressing>.removeByName("create:pressing/brass_ingot");
 <recipetype:create:pressing>.removeByName("create:pressing/iron_ingot");

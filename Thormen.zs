@@ -5,7 +5,19 @@ import crafttweaker.api.recipe.Replacer;
 import mods.create.PressingManager;
 import crafttweaker.api.recipe.FurnaceRecipeManager;
 import crafttweaker.api.fluid.IFluidStack; // check for create stuff and additions dependensis
-/*-------------------------------Support for not supported mods--------------------------*///i feel the pain
+/*-------------------------------Support for not supported mods--------------------------*/
+
+function addrollingrecipe_(itemIn as IItemStack,outputItem as IItemStack, count as int) as void {
+    <recipetype:createaddition:rolling>.addJSONRecipe("customrolling" + itemIn.registryName.path + "sdcs",{
+	"input": {
+      	"tag": itemIn
+	},
+	"result": {
+		"item": outputItem,
+		"count": count
+	}
+    });
+}
 
 
 function addCrushingRecipe(itemIn as IItemStack,outputItem as IItemStack) as void {

@@ -688,6 +688,11 @@ JEI.hideIngredient(<item:alltheores:steel_rod>);
 /*-------------------------------------Mekanism--------------------------------------------*/
 craftingTable.removeByName("mekanism:charcoal");
 JEI.hideIngredient(<item:mekanism:block_charcoal>);
+/*-------------------------------------OC II-----------------------------------------------*/
+craftingTable.addShaped("OC_missing",<item:oc2:computer>,[
+[<item:minecraft:iron_ingot>,<item:oc2:bus_cable>,<item:minecraft:iron_ingot>],
+[<item:oc2:bus_cable>,<item:oc2:transistor>,<item:oc2:bus_cable>],
+[<item:minecraft:iron_ingot>,<item:oc2:bus_cable>,<item:minecraft:iron_ingot>]]);
 /*-------------------------------------Wands-----------------------------------------------*/
 craftingTable.removeByName("constructionwand:core_destruction");
 craftingTable.removeByName("constructionwand:infinity_wand");

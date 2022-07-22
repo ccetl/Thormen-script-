@@ -8,7 +8,7 @@ import crafttweaker.api.fluid.IFluidStack;
 /*-------------------------------Support for not supported mods--------------------------*/
 
 function addrollingrecipe_(itemIn as IItemStack,outputItem as IItemStack, count as int) as void {
-    <recipetype:createaddition:rolling>.addJSONRecipe("customrolling" + itemIn.registryName.path + "sdcs",{
+    <recipetype:createaddition:rolling>.addJsonRecipe("customrolling" + itemIn.registryName.path + "sdcs",{
 	"input": {
       	"tag": itemIn
 	},
@@ -20,14 +20,14 @@ function addrollingrecipe_(itemIn as IItemStack,outputItem as IItemStack, count 
 }
 
 function addCrushingRecipe(itemIn as IItemStack,outputItem as IItemStack) as void {
-    <recipetype:mekanism:crushing>.addJSONRecipe("custemmekacrushing"+itemIn.registryName.path+outputItem.registryName.path+"dvsvs",{ 
+    <recipetype:mekanism:crushing>.addJsonRecipe("custemmekacrushing"+itemIn.registryName.path+outputItem.registryName.path+"dvsvs",{ 
         "input": itemIn,
         "input": outputItem
     });
 }                                                                                                                                              //dvsvs to avoid conficts
 
 function addpurifyingRecipe_(itemIn as IItemStack, gasIn as string, outputItem as IItemStack) as void {
-    <recipetype:mekanism:purifying>.addJSONRecipe("custompurifying"+itemIn.registryName+"sdfsf",{
+    <recipetype:mekanism:purifying>.addJsonRecipe("custompurifying"+itemIn.registryName+"sdfsf",{
         "itemInput": itemIn,
         "gasInput": gasIn,
         "output": outputItem
@@ -35,7 +35,7 @@ function addpurifyingRecipe_(itemIn as IItemStack, gasIn as string, outputItem a
 }
 
 function addmineral_crusher_recipe_(itemIn as IItemStack,outputItem as IItemStack,experience as float)as void{
-<recipetype:electrodynamics:mineral_crusher_recipe>.addJSONRecipe("mineral_electro_"+itemIn.registryName.path+rwgwg,{
+<recipetype:electrodynamics:mineral_crusher_recipe>.addJsonRecipe("mineral_electro_"+itemIn.registryName.path+rwgwg,{
     "iteminputs" :{
         "count":1,
         "0":{

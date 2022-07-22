@@ -35,7 +35,7 @@ function addpurifyingRecipe_(itemIn as IItemStack, gasIn as string, outputItem a
 }
 
 function addmineral_crusher_recipe_(itemIn as IItemStack,outputItem as IItemStack,experience as float)as void{
-<recipetype:electrodynamics:mineral_crusher_recipe>.addJsonRecipe("mineral_electro_"+itemIn.registryName.path+rwgwg,{
+<recipetype:electrodynamics:mineral_crusher_recipe>.addJsonRecipe("mineral_electro_"+itemIn.registryName.path+"rwgwg",{
     "iteminputs" :{
         "count":1,
         "0":{

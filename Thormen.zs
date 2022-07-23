@@ -90,26 +90,22 @@ Replacer.forEverything().replace(<item:create:iron_sheet>,<item:alltheores:iron_
 /*----------------------------------Nickel Plate------------------------------------------*/
 craftingTable.removeByName("immersiveengineering:crafting/plate_nickel_hammering");
 JEI.hideIngredient(<item:immersiveengineering:plate_nickel>);
-<tag:items:forge:plates/nickel>.add(<item:alltheores:nickel_plate>);
 <tag:items:forge:plates/nickel>.remove(<item:immersiveengineering:plate_nickel>);
 Replacer.forEverything().replace(<item:immersiveengineering:plate_nickel>,<item:alltheores:iron_plate>).suppressWarnings().execute();
 /*----------------------------------------Uranium Plate-----------------------------------*/
 craftingTable.removeByName("immersiveengineering:crafting/plate_uranium_hammering");
 JEI.hideIngredient(<item:immersiveengineering:plate_uranium>);
-<tag:items:forge:plates/uranium>.add(<item:alltheores:uranium_plate>);
 <tag:items:forge:plates/uranium>.remove(<item:immersiveengineering:plate_uranium>);
 Replacer.forEverything().replace(<item:immersiveengineering:plate_uranium>,<item:alltheores:uranium_plate>).suppressWarnings().execute();
 /*---------------------------------------Electrum Plate-----------------------------------*/
 craftingTable.removeByName("immersiveengineering:crafting/plate_electrum_hammering");
 JEI.hideIngredient(<item:immersiveengineering:plate_electrum>);
-<tag:items:forge:plates/electrum>.add(<item:alltheores:electrum_plate>);
 <tag:items:forge:plates/electrum>.remove(<item:immersiveengineering:plate_electrum>);
 Replacer.forEverything().replace(<item:immersiveengineering:plate_electrum>,<item:alltheores:electrum_plate>).suppressWarnings().execute();
 /*---------------------------------------Aluminum Plate-----------------------------------*/
 craftingTable.removeByName("immersiveengineering:crafting/plate_aluminum_hammering");
 JEI.hideIngredient(<item:immersiveengineering:plate_aluminum>);
 JEI.hideIngredient(<item:electrodynamics:platealuminum>);
-<tag:items:forge:plates/aluminum>.add(<item:alltheores:aluminum_plate>);
 <tag:items:forge:plates/aluminum>.remove(<item:electrodynamics:platealuminum>);
 <tag:items:forge:plates/aluminum>.remove(<item:immersiveengineering:plate_aluminum>);
 Replacer.forEverything().replace(<item:immersiveengineering:plate_aluminum>,<item:alltheores:aluminum_plate>).suppressWarnings().execute();
@@ -119,7 +115,6 @@ craftingTable.removeByName("immersiveengineering:crafting/plate_lead_hammering")
 craftingTable.removeByName("electrodynamics:platelead");
 JEI.hideIngredient(<item:immersiveengineering:plate_lead>);
 JEI.hideIngredient(<item:electrodynamics:platelead>);
-<tag:items:forge:plates/lead>.add(<item:alltheores:lead_plate>);
 <tag:items:forge:plates/lead>.remove(<item:immersiveengineering:plate_lead>);
 <tag:items:forge:plates/lead>.remove(<item:electrodynamics:platelead>);
 Replacer.forEverything().replace(<item:immersiveengineering:plate_lead>,<item:alltheores:lead_plate>).suppressWarnings().execute();
@@ -127,20 +122,17 @@ Replacer.forEverything().replace(<item:electrodynamics:platelead>,<item:alltheor
 /*-------------------------------------Silver Plate----------------------------------------*/
 craftingTable.removeByName("immersiveengineering:crafting/plate_silver_hammering");
 JEI.hideIngredient(<item:immersiveengineering:plate_silver>);
-<tag:items:forge:plates/silver>.add(<item:alltheores:silver_plate>);
 <tag:items:forge:plates/silver>.remove(<item:immersiveengineering:plate_silver>);
 Replacer.forEverything().replace(<item:immersiveengineering:plate_silver>,<item:alltheores:silver_plate>).suppressWarnings().execute();
 /*-------------------------------------Constantan Plate------------------------------------*/
 craftingTable.removeByName("immersiveengineering:crafting/plate_constantan_hammering");
 JEI.hideIngredient(<item:immersiveengineering:plate_constantan>);
-<tag:items:forge:plates/constantan>.add(<item:alltheores:constantan_plate>);
 <tag:items:forge:plates/constantan>.remove(<item:immersiveengineering:plate_constantan>);
 Replacer.forEverything().replace(<item:immersiveengineering:plate_constantan>,<item:alltheores:constantan_plate>).suppressWarnings().execute();
 /*-------------------------------------Gold Plate------------------------------------------*/
 craftingTable.removeByName("immersiveengineering:crafting/plate_gold_hammering");
 JEI.hideIngredient(<item:immersiveengineering:plate_gold>);
 JEI.hideIngredient(<item:create:golden_sheet>);
-<tag:items:forge:plates/gold>.add(<item:alltheores:gold_plate>);
 <tag:items:forge:plates/gold>.remove(<item:immersiveengineering:plate_gold>);
 <tag:items:forge:plates/gold>.remove(<item:create:golden_sheet>);
 Replacer.forEverything().replace(<item:immersiveengineering:plate_gold>,<item:alltheores:gold_plate>).suppressWarnings().execute();
@@ -150,14 +142,12 @@ craftingTable.removeByName("immersiveengineering:crafting/plate_steel_hammering"
 craftingTable.removeByName("electrodynamics:platesteel");
 JEI.hideIngredient(<item:immersiveengineering:plate_steel>);
 JEI.hideIngredient(<item:electrodynamics:platesteel>);
-<tag:items:forge:plates/steel>.add(<item:alltheores:steel_plate>);
 <tag:items:forge:plates/steel>.remove(<item:immersiveengineering:plate_steel>);
 <tag:items:forge:plates/steel>.remove(<item:electrodynamics:platesteel>);
 Replacer.forEverything().replace(<item:immersiveengineering:plate_steel>,<item:alltheores:steel_plate>).suppressWarnings().execute();
 Replacer.forEverything().replace(<item:electrodynamics:platesteel>,<item:alltheores:steel_plate>).suppressWarnings().execute();
 /*-------------------------------------Brass Plate-----------------------------------------*/
 JEI.hideIngredient(<item:create:brass_sheet>);
-<tag:items:forge:plates/brass>.add(<item:alltheores:brass_plate>);
 <tag:items:forge:plates/brass>.remove(<item:create:brass_sheet>);
 Replacer.forEverything().replace(<item:create:brass_sheet>,<item:alltheores:brass_plate>).suppressWarnings().execute();
 /*-------------------------------------Bronze Plate----------------------------------------*/

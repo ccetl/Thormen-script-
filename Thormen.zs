@@ -7,7 +7,7 @@ import crafttweaker.api.recipe.FurnaceRecipeManager;
 import crafttweaker.api.fluid.IFluidStack;
 /*-------------------------------Support for not supported mods--------------------------*/
 
-function addrollingrecipe_(itemIn as IItemStack,outputItem as IItemStack, count as int) as void {
+/*function addrollingrecipe_(itemIn as IItemStack,outputItem as IItemStack, count as int) as void {
     <recipetype:createaddition:rolling>.addJsonRecipe("customrolling" + itemIn.registryName.path + "sdcs",{
 	"input": {
       	"tag": itemIn
@@ -49,7 +49,7 @@ function addmineral_crusher_recipe_(itemIn as IItemStack,outputItem as IItemStac
     },
     "experience":experience
     });
-}
+}*/
 /*-------------------------------Beyond Earth--------------------------------------------*/
 craftingTable.removeByName("beyond_earth:compressor");
 craftingTable.removeByName("beyond_earth_giselle_addon:crafting/advanced_compressor");
@@ -689,7 +689,7 @@ JEI.hideIngredient(<item:alltheores:steel_rod>);
 craftingTable.removeByName("mekanism:charcoal");
 JEI.hideIngredient(<item:mekanism:block_charcoal>);
 /*-------------------------------------OC II-----------------------------------------------*/
-craftingTable.addShaped("OC_missing",<item:oc2:computer>,[
+craftingTable.addShaped("oc_missing",<item:oc2:computer>,[
 [<item:minecraft:iron_ingot>,<item:oc2:bus_cable>,<item:minecraft:iron_ingot>],
 [<item:oc2:bus_cable>,<item:oc2:transistor>,<item:oc2:bus_cable>],
 [<item:minecraft:iron_ingot>,<item:oc2:bus_cable>,<item:minecraft:iron_ingot>]]);

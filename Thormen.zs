@@ -1,4 +1,4 @@
-/* Config FOR Thormen Modpack*/
+/* Config for Thormen Modpack*/
 import crafttweaker.api.item.IItemStack;
 import mods.jei.JEI;
 import crafttweaker.api.recipe.Replacer;
@@ -86,7 +86,6 @@ Replacer.forEverything().replace(<item:immersiveengineering:plate_iron>,<item:al
 Replacer.forEverything().replace(<item:beyond_earth:iron_plate>,<item:alltheores:iron_plate>).suppressWarnings().execute();
 Replacer.forEverything().replace(<item:electrodynamics:plateiron>,<item:alltheores:iron_plate>).suppressWarnings().execute();
 Replacer.forEverything().replace(<item:create:iron_sheet>,<item:alltheores:iron_plate>).suppressWarnings().execute();
-//Replacer.forOutput().replace(<item:electrodynamics:plateiron>,<item:alltheores:iron_plate>).execute();
 /*----------------------------------Nickel Plate------------------------------------------*/
 craftingTable.removeByName("immersiveengineering:crafting/plate_nickel_hammering");
 JEI.hideIngredient(<item:immersiveengineering:plate_nickel>);
@@ -169,24 +168,6 @@ JEI.hideIngredient(<item:electrodynamics:circuitadvanced>);
 JEI.hideIngredient(<item:electrodynamics:circuitelite>);
 JEI.hideIngredient(<item:electrodynamics:circuitultimate>);
 /*-------------------------------------Create----------------------------------------------*/
-/*craftingTable.removeByName("create_stuff_additions:copper_armor_body_recipe");                  
-craftingTable.removeByName("create_stuff_additions:copper_armor_boots_recipe");
-craftingTable.removeByName("create_stuff_additions:copper_armor_helmet_recipe");
-craftingTable.removeByName("create_stuff_additions:copper_armor_leggings_recipe");
-craftingTable.removeByName("create_stuff_additions:copper_axe_recipe");
-craftingTable.removeByName("create_stuff_additions:copper_hoe_recipe");
-craftingTable.removeByName("create_stuff_additions:copper_pickaxe_recipe");
-craftingTable.removeByName("create_stuff_additions:copper_shovel_recipe");
-craftingTable.removeByName("create_stuff_additions:copper_sword_recipe");
-JEI.hideIngredient(<item:create_stuff_additions:copper_armor_chestplate>);
-JEI.hideIngredient(<item:create_stuff_additions:copper_armor_helmet>);
-JEI.hideIngredient(<item:create_stuff_additions:copper_armor_leggings>);
-JEI.hideIngredient(<item:create_stuff_additions:copper_armor_boots>);
-JEI.hideIngredient(<item:create_stuff_additions:copper_pickaxe>);
-JEI.hideIngredient(<item:create_stuff_additions:copper_axe>);
-JEI.hideIngredient(<item:create_stuff_additions:copper_sword>);
-JEI.hideIngredient(<item:create_stuff_additions:copper_shovel>);
-JEI.hideIngredient(<item:create_stuff_additions:copper_hoe>);*/
 JEI.hideIngredient(<item:createaddition:copper_rod>);
 
 JEI.hideIngredient(<item:create:deepslate_zinc_ore>);

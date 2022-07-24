@@ -355,6 +355,7 @@ JEI.hideIngredient(<item:mekanism:ingot_steel>);
 Replacer.forEverything().replace(<item:mekanism:ingot_steel>,<item:alltheores:steel_ingot>).suppressWarnings().execute();
 craftingTable.remove(<item:mekanism:ingot_steel>);
 furnace.remove(<item:mekanism:ingot_steel>);
+furnace.addRecipe(<item:alltheores:steel_ingot>,<item:mekanism:dust_steel>);
 
 JEI.hideIngredient(<item:electrodynamics:ingotsilver>);
 <tag:items:forge:ingots/silver>.remove(<item:electrodynamics:ingotsilver>);
@@ -660,6 +661,7 @@ JEI.hideIngredient(<item:alltheores:steel_rod>);
 /*-------------------------------------Mekanism--------------------------------------------*/
 craftingTable.removeByName("mekanism:charcoal");
 JEI.hideIngredient(<item:mekanism:block_charcoal>);
+
 /*-------------------------------------OC II-----------------------------------------------*/
 craftingTable.addShaped("oc_missing",<item:oc2:computer>,[
 [<item:minecraft:iron_ingot>,<item:oc2:bus_cable>,<item:minecraft:iron_ingot>],

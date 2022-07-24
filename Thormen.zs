@@ -355,7 +355,7 @@ JEI.hideIngredient(<item:mekanism:ingot_steel>);
 Replacer.forEverything().replace(<item:mekanism:ingot_steel>,<item:alltheores:steel_ingot>).suppressWarnings().execute();
 craftingTable.remove(<item:mekanism:ingot_steel>);
 furnace.remove(<item:mekanism:ingot_steel>);
-furnace.addJsonRecipe("steel1", {ingredient:{item:<item:mekanism:ingot_steel>.registryName},result:<item:alltheores:steel_ingot>.registryName,experience:0.35 as float, cookingtime:100});
+furnace.addJsonRecipe("steel1", {ingredient:{item:<item:mekanism:dust_steel>.registryName},result:<item:alltheores:steel_ingot>.registryName,experience:0.35 as float, cookingtime:100});
 
 JEI.hideIngredient(<item:electrodynamics:ingotsilver>);
 <tag:items:forge:ingots/silver>.remove(<item:electrodynamics:ingotsilver>);

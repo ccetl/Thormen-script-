@@ -354,6 +354,7 @@ JEI.hideIngredient(<item:mekanism:ingot_steel>);
 <tag:items:forge:ingots>.remove(<item:mekanism:ingot_steel>);
 Replacer.forEverything().replace(<item:mekanism:ingot_steel>,<item:alltheores:steel_ingot>).suppressWarnings().execute();
 craftingTable.remove(<item:mekanism:ingot_steel>);
+furnace.remove(<item:mekanism:ingot_steel>);
 
 JEI.hideIngredient(<item:electrodynamics:ingotsilver>);
 <tag:items:forge:ingots/silver>.remove(<item:electrodynamics:ingotsilver>);

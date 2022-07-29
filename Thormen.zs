@@ -87,7 +87,6 @@ Replacer.forEverything().replace(<item:beyond_earth:iron_plate>,<item:alltheores
 Replacer.forEverything().replace(<item:electrodynamics:plateiron>,<item:alltheores:iron_plate>).suppressWarnings().execute();
 Replacer.forEverything().replace(<item:create:iron_sheet>,<item:alltheores:iron_plate>).suppressWarnings().execute();
 /*----------------------------------Nickel Plate------------------------------------------*/
-craftingTable.removeByName("immersiveengineering:crafting/plate_nickel_hammering");
 JEI.hideIngredient(<item:immersiveengineering:plate_nickel>);
 <tag:items:forge:plates/nickel>.remove(<item:immersiveengineering:plate_nickel>);
 Replacer.forEverything().replace(<item:immersiveengineering:plate_nickel>,<item:alltheores:iron_plate>).suppressWarnings().execute();

@@ -353,8 +353,6 @@ JEI.hideIngredient(<item:mekanism:ingot_steel>);
 <tag:items:forge:ingots>.remove(<item:mekanism:ingot_steel>);
 Replacer.forEverything().replace(<item:mekanism:ingot_steel>,<item:alltheores:steel_ingot>).suppressWarnings().execute();
 craftingTable.remove(<item:mekanism:ingot_steel>);
-furnace.remove(<item:mekanism:ingot_steel>);
-furnace.addJsonRecipe("steel1", {ingredient:{item:<item:mekanism:dust_steel>.registryName},result:<item:alltheores:steel_ingot>.registryName,experience:0.35 as float, cookingtime:100});
 
 JEI.hideIngredient(<item:electrodynamics:ingotsilver>);
 <tag:items:forge:ingots/silver>.remove(<item:electrodynamics:ingotsilver>);
@@ -391,6 +389,9 @@ JEI.hideIngredient(<item:beyond_earth:steel_ingot>);
 <tag:items:forge:ingots>.remove(<item:beyond_earth:steel_ingot>);
 Replacer.forEverything().replace(<item:beyond_earth:steel_ingot>,<item:alltheores:steel_ingot>).suppressWarnings().execute();
 craftingTable.remove(<item:beyond_earth:steel_ingot>);
+
+JEI.hideIngredient(<item:create:brass_ingot>);
+<tag:items:forge:ingots/brass>.remove(<item:create:brass_ingot>);
 /*-------------------------------------Raw-------------------------------------------------*/
 JEI.hideIngredient(<item:immersiveengineering:raw_aluminum>);
 craftingTable.remove(<item:immersiveengineering:raw_aluminum>);
@@ -518,6 +519,10 @@ craftingTable.remove(<item:electrodynamics:raworeblocklead>);
 JEI.hideIngredient(<item:electrodynamics:raworeblocksilver>);
 craftingTable.remove(<item:electrodynamics:raworeblocksilver>);
 /*-------------------------------------Nuggets---------------------------------------------*/
+JEI.hideIngredient(<item:create:brass_nugget>);
+craftingTable.remove(<item:create:brass_ingot>);
+<tag:items:forge:nuggets/brass>.remove(<item:create:brass_nugget>);
+
 JEI.hideIngredient(<item:beyond_earth:steel_nugget>);
 craftingTable.remove(<item:beyond_earth:steel_nugget>);
 
@@ -593,7 +598,7 @@ JEI.hideIngredient(<item:electrodynamics:gearsteel>);
 JEI.hideIngredient(<item:electrodynamics:geartin>);
 JEI.hideIngredient(<item:electrodynamics:gearcopper>);
 JEI.hideIngredient(<item:electrodynamics:geariron>);
-/*-------------------------------------Dusts-----------------------------------------------*///WIP
+/*-------------------------------------Dusts-----------------------------------------------*/
 craftingTable.removeByName("alltheores:uranium_dust_from_hammer_crushing");
 craftingTable.removeByName("alltheores:uranium_dust_from_hammer_ingot_crushing");
 craftingTable.removeByName("immersiveengineering:crafting/electrum_mix");
@@ -624,7 +629,6 @@ JEI.hideIngredient(<item:alltheores:lead_dust>);
 JEI.hideIngredient(<item:alltheores:dirty_osmium_dust>);
 JEI.hideIngredient(<item:electrodynamics:dustsilver>);
 
-
 JEI.hideIngredient(<item:electrodynamics:dustiron>);
 JEI.hideIngredient(<item:electrodynamics:dustgold>);
 JEI.hideIngredient(<item:electrodynamics:dustcopper>);
@@ -635,14 +639,79 @@ JEI.hideIngredient(<item:electrodynamics:dustsulfur>);
 JEI.hideIngredient(<item:alltheores:netherite_dust>);
 JEI.hideIngredient(<item:electrodynamics:dustnetherite>);
 
-<tag:items:forge:dusts>.remove(<item:mekanism:dust_gold>);
-<tag:items:forge:dusts/gold>.remove(<item:mekanism:dust_gold>);
+JEI.hideIngredient(<item:alltheores:uranium_dust>);
+JEI.hideIngredient(<item:alltheores:tin_dust>);
+JEI.hideIngredient(<item:alltheores:lead_dust>);
+JEI.hideIngredient(<item:alltheores:iron_dust>);
+JEI.hideIngredient(<item:alltheores:copper_dust>);
+JEI.hideIngredient(<item:alltheores:gold_dust>);
+JEI.hideIngredient(<item:alltheores:steel_dust>);
+JEI.hideIngredient(<item:alltheores:bronze_dust>);
 
-JEI.hideIngredient(<item:mekanism:dust_uranium>);
+//JEI.hideIngredient(<item:>);
+
+<tag:items:forge:dusts/iron>.remove(<item:electrodynamics:dustiron>);
+<tag:items:forge:dusts/gold>.remove(<item:electrodynamics:dustgold>);
+<tag:items:forge:dusts/copper>.remove(<item:electrodynamics:dustcopper>);
+<tag:items:forge:dusts/steel>.remove(<item:electrodynamics:duststeel>);
+<tag:items:forge:dusts/lead>.remove(<item:electrodynamics:dustlead>);
+<tag:items:forge:dusts/bronze>.remove(<item:electrodynamics:dustbronze>);
+<tag:items:forge:dusts/sulfur>.remove(<item:electrodynamics:dustsulfur>);
+<tag:items:forge:dusts/netherite>.remove(<item:electrodynamics:dustnetherite>);
+<tag:items:forge:dusts/silver>.remove(<item:electrodynamics:dustsilver>);
+<tag:items:forge:dusts/obsidian>.remove(<item:electrodynamics:dustobsidian>);
+
+<tag:items:forge:dusts/netherite>.remove(<item:alltheores:netherite_dust>);
+<tag:items:forge:dusts/uranium>.remove(<item:alltheores:uranium_dust>);
+<tag:items:forge:dusts/tin>.remove(<item:alltheores:tin_dust>);
+<tag:items:forge:dusts/osmium>.remove(<item:alltheores:osmium_dust>);
+<tag:items:forge:dusts/lead>.remove(<item:alltheores:lead_dust>);
+<tag:items:forge:dusts/iron>.remove(<item:alltheores:iron_dust>);
+<tag:items:forge:dusts/copper>.remove(<item:alltheores:copper_dust>);
+<tag:items:forge:dusts/gold>.remove(<item:alltheores:gold_dust>);
+<tag:items:forge:dusts/diamond>.remove(<item:alltheores:diamond_dust>);
+<tag:items:forge:dusts/steel>.remove(<item:alltheores:steel_dust>);
+<tag:items:forge:dusts/bronze>.remove(<item:alltheores:bronze_dust>);
+
+<tag:items:forge:dusts/wood>.remove(<item:immersiveengineering:dust_wood>);
+<tag:items:forge:dusts/sulfur>.remove(<item:immersiveengineering:dust_sulfur>);
+//<tag:items:forge:dusts/salpeter>.remove(<items:immersiveengineering:dust_saltpeter>);
+<tag:items:forge:dusts/gold>.remove(<item:immersiveengineering:dust_gold>);
+<tag:items:forge:dusts/iron>.remove(<item:immersiveengineering:dust_iron>);
+<tag:items:forge:dusts/steel>.remove(<item:immersiveengineering:dust_steel>);
+<tag:items:forge:dusts/electrum>.remove(<item:immersiveengineering:dust_electrum>);
+<tag:items:forge:dusts/constantan>.remove(<item:immersiveengineering:dust_constantan>);
+<tag:items:forge:dusts/uranium>.remove(<item:immersiveengineering:dust_uranium>);
+<tag:items:forge:dusts/nickel>.remove(<item:immersiveengineering:dust_nickel>);
+<tag:items:forge:dusts/lead>.remove(<item:immersiveengineering:dust_lead>);
+<tag:items:forge:dusts/silver>.remove(<item:immersiveengineering:dust_silver>);
+<tag:items:forge:dusts/aluminum>.remove(<item:immersiveengineering:dust_aluminum>);
+<tag:items:forge:dusts/copper>.remove(<item:immersiveengineering:dust_copper>);
+//<tag:items:forge:dust>.remove(<item:immersiveengineering:>);
+
+furnace.remove(<item:mekanism:ingot_steel>);
+furnace.addJsonRecipe("steel1", {ingredient:{item:<item:mekanism:dust_steel>.registryName},result:<item:alltheores:steel_ingot>.registryName,experience:0.35 as float, cookingtime:100});
+
+furnace.remove(<item:mekanism:ingot_tin>);
+furnace.addJsonRecipe("tin1", {ingredient:{item:<item:mekanism:dust_tin>.registryName},result:<item:alltheores:tin_ingot>.registryName,experience:0.35 as float, cookingtime:100});
+furnace.remove(<item:electrodynamics:ingottin>);
+
+furnace.remove(<item:mekanism:ingot_osmium>);
+furnace.addJsonRecipe("osmium1", {ingredient:{item:<item:mekanism:dust_osmium>.registryName},result:<item:alltheores:osmium_ingot>.registryName,experience:0.35 as float, cookingtime:100});
+
+furnace.remove(<item:mekanism:ingot_uranium>);
+furnace.addJsonRecipe("uranium1", {ingredient:{item:<item:mekanism:dust_uranium>.registryName},result:<item:alltheores:uranium_ingot>.registryName,experience:0.35 as float, cookingtime:100});
+
+furnace.remove(<item:mekanism:ingot_lead>);
+furnace.addJsonRecipe("lead1", {ingredient:{item:<item:mekanism:dust_lead>.registryName},result:<item:alltheores:lead_ingot>.registryName,experience:0.35 as float, cookingtime:100});
+
+furnace.remove(<item:mekanism:ingot_bronze>);
+furnace.addJsonRecipe("bronze", {ingredient:{item:<item:mekanism:dust_bronze>.registryName},result:<item:alltheores:bronze_ingot>.registryName,experience:0.35 as float, cookingtime:100});
+
+/*JEI.hideIngredient(<item:mekanism:dust_uranium>);
 //mods.mekanism.enrichment.addRecipe(<item:mekanism:dirty_dust_uranium>,<item:alltheores:uranium_dust>);
 //mods.mekanism.enrichment.removeRecipe(<item:mekanism:dirty_dust_uranium>);
-Replacer.forEverything().replace(<item:mekanism:dust_uranium>,<item:alltheores:uranium_dust>).suppressWarnings().execute();
-furnace.remove(<item:mekanism:ingot_uranium>);
+furnace.remove(<item:mekanism:ingot_uranium>);*/
 
 <tag:items:forge:dusts/tin>.remove(<item:electrodynamics:dusttin>);
 /*-------------------------------------Rods------------------------------------------------*/
@@ -661,6 +730,7 @@ JEI.hideIngredient(<item:alltheores:steel_rod>);
 craftingTable.removeByName("mekanism:charcoal");
 JEI.hideIngredient(<item:mekanism:block_charcoal>);
 
+<tag:items:curios:back>.add(<item:mekanism:jetpack>);
 /*-------------------------------------OC II-----------------------------------------------*/
 /*craftingTable.addShaped("oc_missing",<item:oc2:computer>,[
 [<item:minecraft:iron_ingot>,<item:oc2:bus_cable>,<item:minecraft:iron_ingot>],

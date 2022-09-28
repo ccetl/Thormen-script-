@@ -1,2 +1,1 @@
-# Thormen-script
-ThormenModpack-Crafttweaker-Script
+# ThormenModpack-Crafttweaker-Script

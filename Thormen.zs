@@ -1,4 +1,4 @@
-/* Config for Thormen Modpack*/
+/* Config for the Thormen modpack*/
 import crafttweaker.api.item.IItemStack;
 import mods.jei.JEI;
 import crafttweaker.api.recipe.Replacer;
